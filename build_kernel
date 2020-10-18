@@ -1,1 +1,9 @@
+#!/bin/bash
+######################################################################################################
+#These two commands will check for updates and install the prerequisites requires to start the process
+apt-get update
+apt install raspberrypi-kernel-headers build-essential bc git wget bison flex libssl-dev make
+######################################################################################################
+cd ~
+#git clone --depth=1
 echo "Hello World"
