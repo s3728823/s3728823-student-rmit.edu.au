@@ -10,8 +10,8 @@ apt install raspberrypi-kernel-headers build-essential bc git wget bison flex li
 #cd ~ #Will send the user to their home directory and the git clone commands will download the necessary repositories
 #required for kernel compilation, this causes an error during compilation for some reason, needs assessing
 
-git clone --depth=1 https://github.com/raspberrypi/linux || ( cd ./linux && git pull ) #Git clone repository 
-git clone --depth=1 https://github.com/s3728823/s3728823-student-rmit.edu.au #Git clone my repository
+git clone --depth=1 git@github.com:raspberrypi/linux.git  || ( cd ./linux && git pull ) #Git clone repository 
+git clone --depth=1 git@github.com:s3728823/s3728823-student.rmit.edu.au.git  #Git clone my repository
 
 mv ./s3728823-student-rmit.edu.au/.config /linux #Will move the .config file to the linux folder
 #cd ./linux #Changes the current directory to linux
@@ -27,4 +27,5 @@ cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
 cp arch/arm/boot/dts/overlays/README /boot/overlays/
 cp arch/arm/boot/zImage /boot/$KERNEL.img
 #These commands will copy the relevant configuration files to the systems path so on reboot it has a new kernel
+
 
