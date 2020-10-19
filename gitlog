@@ -1,0 +1,113 @@
+commit e645104cffb3607d23e2ac2b610da2f774341027
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 19:14:54 2020 +1030
+
+    Performance Monitoring Script
+
+commit 1c7ead392ce5aa9b0e68f63294caead3adbb5610
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 18:32:39 2020 +1030
+
+    bash script intended for pi kernel compilation
+
+commit 5d3ed9c80a4a684657c5e11c9a4a05db25723695
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 18:30:20 2020 +1030
+
+    Performance Monitoring Script
+
+commit 0f473e63d567fb1dbd6a7549084f9e069998a061
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 18:25:01 2020 +1030
+
+    Performance Monitoring Script
+
+commit a41445759170e298752296cad4a3202dcf17daa9
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 18:17:14 2020 +1030
+
+    User documentation for vcgencmd bash script
+
+commit 4b1c13aae4c985cfc27c7a486fb4046d5cb410e2
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 17:24:48 2020 +1030
+
+    Performance Monitoring Script
+
+commit 5e1e92aba459780e5918077a181362c54efbf7bd
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 17:20:01 2020 +1030
+
+    bash script for pi kernel compilation
+
+commit 12cb3b33bb9c4ae98523c230be63e2c8ba15d68b
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 16:14:20 2020 +1030
+
+    Performance monitoring script
+
+commit 1e546ad36c4cb911029c455e9e1cdba94780d6a2
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 15:16:25 2020 +1030
+
+    bash script for pi kernel compilation
+
+commit 9defc437f2a9872aa37b77e7a17c98d333c9f340
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 14:41:35 2020 +1030
+
+    Performance Monitoring Script
+
+commit 728b52623b3084ea678f37d95fb02548d176ade0
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 14:32:57 2020 +1030
+
+    bash script for pi kernel compilation
+
+commit 718ed9aa1213018822e92a6fac97a749c107b9e0
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 14:25:40 2020 +1030
+
+    User Documentation for build_kernel bash script
+
+commit 045dee7d62320aa9df272065cd53f3d0ace22fb8
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 13:47:30 2020 +1030
+
+    bash script for pi kernel compilation
+
+commit 5085dae2d1dcd1c52916dd7dcb837643a4105d2f
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 13:44:03 2020 +1030
+
+    bash script to compile pi kernel
+
+commit a51f420d4064d6bfbd5dd5049c1fb8ebcad35e19
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 03:54:06 2020 +1030
+
+    build_kernel bash script for automated compilation
+
+commit 8c87409c9508781401877da6287ae4243e5626fc
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 02:15:30 2020 +1030
+
+    build_kernel bash script for automated compilation
+
+commit d51f5b3edfc57c394876e7df4f97c04ad845d67c
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Mon Oct 19 02:00:45 2020 +1030
+
+    build_kernel bash script for automated compilation
+
+commit 975270315aea40f828aecf5d3975d5e83c482429
+Author: s3728823 <s3728823@student.rmit.edu.au>
+Date:   Sat Oct 17 16:19:36 2020 +1030
+
+    .config file for pi kernel compilation
+
+commit 8ca530bf16770bce5bfcf0e2e56fc0395a1eb54f
+Author: s3728823 <72490501+s3728823@users.noreply.github.com>
+Date:   Wed Oct 7 18:25:19 2020 +1100
+
+    Initial commit
