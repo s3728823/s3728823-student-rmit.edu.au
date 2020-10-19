@@ -9,15 +9,15 @@ echo "Hello build_kernel!"
 printf "-15s%5s\n" "TIMESTAMP" "TEMP(degC)" #printf ensures that the temperature it outputs will be formatted appropriately
 printf "%20s\n" "....................."
 
-echo "My pid is: $$"
-finish=0
-trap 'finish=1' USR1
+#echo "My pid is: $$"
+#finish=0
+#trap 'finish=1' USR1
 
-while (( finish != 1 ))
-do
-    stuff
-    sleep 42
-done
+#while (( finish != 1 ))
+#do
+#    stuff
+#    sleep 42
+#done
 
 while true #while ensures that the script is run as a loop so it constantly outputs the temperature
 do
