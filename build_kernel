@@ -29,7 +29,7 @@ cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
 cp arch/arm/boot/dts/overlays/README /boot/overlays/
 cp arch/arm/boot/zImage /boot/$KERNEL.img
 
-kill -USR1 pid
+#kill -USR1 pid does not work as intended :(
 
 #These commands will copy the relevant configuration files to the systems path so on reboot it has a new kernel
 
