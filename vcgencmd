@@ -2,17 +2,17 @@
 #####################################################################################################
 ###################		George Kalaitzakis s3728823			#####################
 #####################################################################################################
-echo "Hello World"
+#Simple script to display CPU temperature when build_kernel bash script is running
+echo "Hello build_kernel!"
 
-printf "-15s%5s\n" "TIMESTAMP" "TEMP(F)"
+printf "-15s%5s\n" "TIMESTAMP" "TEMP(degC)" #printf ensures that the temperature it outputs will be formatted appropriately
 printf "%20s\n" "....................."
 
 while true
 do
-tempC=$(vcgencmd measure_temp | egrep -o '[0-9]*\.[0-9]*')
-tempF=$(echo "scale=2; 1.8 *$tempC + 32" | bc)
+temp=$(vcgencmd measure_temp | egrep -o '[0-9]*\.[0-9]*')
 timestamp=$(date +'%s')
-printf "%-15s%5s\n" "$timestamp" "$tempF"
+printf "%-15s%5s\n" "Stimestamp" "$temp"
 sleep 1
-
 done
+
