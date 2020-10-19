@@ -1,0 +1,31 @@
+vcgencmd		User Manual		vcgencmd
+
+NAME
+	vcgencmd - bash script intended for CPU temperature checking during my build_kernel
+	compilation bash script
+
+SYNOPSIS
+	This bash script is intended to check the users CPU temperature in their pi while my
+	build_kernel script is compiling
+
+OPTIONS
+	No options for the user to decide with
+
+FILES
+	vcgencmd is pulled from my git repository along with build_kernel, README.md, .config
+	as well as User Documentationf or all my scripts.
+
+ENVIRONMENT
+	Variables include $timestamp which keeps a record of the time and $temp which records
+	and prints the temperature to a file called kernel_performance_data
+
+DIAGNOSTICS
+	No diagnostics to list
+
+BUGS
+	No bugs present at time of writing
+
+AUTHOR
+	George Kalaitzakis s3728823@student.rmit.edu.au
+
+Unix		Last change: OCTOBER 2020
