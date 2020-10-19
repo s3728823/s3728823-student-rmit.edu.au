@@ -14,7 +14,7 @@ git clone --depth=1 https://github.com/raspberrypi/linux || ( cd ./linux && git 
 git clone --depth=1 https://github.com/s3728823/s3728823-student-rmit.edu.au #Git clone my repository
 
 mv ./s3728823-student-rmit.edu.au/.config /linux #Will move the .config file to the linux folder
-cd ./linux #Changes the current directory to linux
+#cd ./linux #Changes the current directory to linux
 
 KERNEL=kernel7 #Specifies the kernel version
 
