@@ -1,0 +1,33 @@
+build_kernel			User Manual			build_kernel
+
+NAME
+	build_kernel - bash script for pi kernel compilation
+
+SYNOPSIS
+	The build_kernel bash script is intended to compile and replace the current users kernel, it will also pull 
+	the necessary git libraries from the raspberry pi git as well as my own personal one. The latter pulling
+	my own personal .config file which specifically disabled video and camera use.
+
+OPTIONS
+	No options for the user to decide with
+
+FILES
+	The git will pull libraries from the raspberry pi repository, specifically the linux kernel.
+	The git will also pull my repository files which includes the .config file as well as the
+	build_kernel script and a README.md file.
+
+ENVIRONMENT 
+	No environment values used in bash script
+
+DIAGNOSTICS
+	No diagnostics to list
+
+BUGS
+	"cd ~" makes the script not compile for some reason, when this is removed it works,
+	more research needs to be done into this
+
+AUTHOR
+	George Kalaitzakis s3728823@student.rmit.edu.au
+
+Unix		Last change: OCTOBER 2020
+
