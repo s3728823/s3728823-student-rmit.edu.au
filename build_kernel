@@ -1,25 +1,22 @@
 #!/bin/bash
+######################################################################################################
+####################                George Kalaitzakis s3728823                    ################### 
+######################################################################################################    
 
-######################################################################################################
-#These two commands will check for updates and install the prerequisites requires to start the process
-apt-get update
-apt install raspberrypi-kernel-headers build-essential bc git wget bison flex libssl-dev make
-######################################################################################################
+apt-get update #Will check local pi for any updates
+apt install raspberrypi-kernel-headers build-essential bc git wget bison flex libssl-dev make #Will install the
+#necessary prerequisite libraries to begin the process
 
-######################################################################################################
-#cd ~ will send the user to their home directory and the git clone commands will download the 
-#necessary repositories requires for kernel compilation
-#cd ~
-git clone --depth=1 https://github.com/raspberrypi/linux || ( cd ./linux && git pull ) 
-git clone --depth=1 https://github.com/s3728823/s3728823-student-rmit.edu.au
+cd ~ #Will send the user to their home directory and the git clone commands will download the necessary repositories
+#required for kernel compilation
 
-######################################################################################################
-#mv command will move the .config file from my repository to the users newly downloaded linux folder
-#mv ~/.config ~/linux
-cd ./linux
-######################################################################################################
+git clone --depth=1 https://github.com/raspberrypi/linux || ( cd ./linux && git pull ) #Git clone repository 
+git clone --depth=1 https://github.com/s3728823/s3728823-student-rmit.edu.au #Git clone my repository
 
-KERNEL=kernel7
+mv ./s3728823-student-rmit.edu.au/.config /linux #Will move the .config file to the linux folder
+cd ./linux #Changes the current directory to linux
+
+KERNEL=kernel7 #Specifies the kernel version
 
 make bcm2709_defconfig
 make -j4 zImage modules dtbs
@@ -29,5 +26,5 @@ cp arch/arm/boot/dts/*.dtb /boot/
 cp arch/arm/boot/dts/overlays/*.dtb* /boot/overlays/
 cp arch/arm/boot/dts/overlays/README /boot/overlays/
 cp arch/arm/boot/zImage /boot/$KERNEL.img
+#These commands will copy the relevant configuration files to the systems path so on reboot it has a new kernel
 
-echo "Hello World"
