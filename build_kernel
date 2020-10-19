@@ -3,7 +3,7 @@
 ####################                George Kalaitzakis s3728823                    ################### 
 ######################################################################################################    
 
-./vcgencmd
+#./vcgencmd This does not work for some reason, no clue why
 
 apt-get update #Will check local pi for any updates
 apt install raspberrypi-kernel-headers build-essential bc git wget bison flex libssl-dev make #Will install the
