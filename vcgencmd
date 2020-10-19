@@ -2,17 +2,20 @@
 #####################################################################################################
 ###################		George Kalaitzakis s3728823			#####################
 #####################################################################################################
-#Simple script to display CPU temperature when build_kernel bash script is running
+#Simple script to display CPU temperature when build_kernel bash script is running, it also appends
+#the recorded temperatures to a file called kernel_performance_data
 echo "Hello build_kernel!"
 
 printf "-15s%5s\n" "TIMESTAMP" "TEMP(degC)" #printf ensures that the temperature it outputs will be formatted appropriately
 printf "%20s\n" "....................."
 
-while true
+while true #while ensures that the script is run as a loop so it constantly outputs the temperature
 do
 temp=$(vcgencmd measure_temp | egrep -o '[0-9]*\.[0-9]*')
 timestamp=$(date +'%s')
 printf "%-15s%5s\n" "Stimestamp" "$temp"
 sleep 1
+touch kernel_performance_data #creates an empty file intended for storing the recorded cpu temperature
+echo "$temp" >> kernel_performance_data #appends the variable temperature to a file
 done
 
